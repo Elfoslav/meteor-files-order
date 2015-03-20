@@ -7,8 +7,12 @@ Run the project and you can see order of loaded files in your developer console:
     /client/lib/script.js loaded
     /lib/script.js loaded
     /client/subfolder/script.js loaded
+    /client/1script.js loaded
+    /client/Ascript.js loaded
+    /client/Bscript.js loaded
     /client/script.js loaded
     /common/script.js loaded
+    /client/subfolder/lib/main.script.js loaded
     /client/subfolder/main.script.js loaded
     /client/main.script.js loaded
 
@@ -29,12 +33,16 @@ Files in subfolders are loaded second:
 
     /client/subfolder/script.js
 
-Then files in top level folders of project are loaded:
+Then files in top level folders of project are loaded in alphabetical order:
 
+    /client/1script.js
+    /client/Ascript.js
+    /client/Bscript.js
     /client/script.js
     /common/script.js
 
 Files which start with "main.*" are loaded last:
 
+    /client/subfolder/lib/main.script.js
     /client/subfolder/main.script.js
     /client/main.script.js
