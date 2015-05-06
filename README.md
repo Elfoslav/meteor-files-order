@@ -46,3 +46,5 @@ Files which start with "main.*" are loaded last:
     /client/subfolder/lib/main.script.js
     /client/subfolder/main.script.js
     /client/main.script.js
+    
+This repository is a part of [Build your first real-time application with Meteor.js](https://www.udemy.com/build-your-first-real-time-web-application-with-meteorjs/) video course on Udemy.
